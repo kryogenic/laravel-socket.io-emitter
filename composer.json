@@ -17,5 +17,6 @@
             "Timenz\\Emitter": "src/"
         }
     },
+    "license": "MIT",
     "minimum-stability": "stable"
 }
