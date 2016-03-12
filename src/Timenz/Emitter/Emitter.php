@@ -9,7 +9,7 @@ use ElephantIO\Exception\ServerConnectionFailureException;
 class Emitter{
     public static function emit($node, $message){
         try{
-            $url = Config::get('emitter::host').':'.Config::get('emitter::port');
+            $url = Config::get('emitter.host').':'.Config::get('emitter.port');
             $client = new Client(new Version1X($url));
 
             $client->initialize();
