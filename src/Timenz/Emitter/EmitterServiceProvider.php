@@ -19,18 +19,6 @@ class EmitterServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
-		\Config::package('timenz/emitter', __DIR__.'/../../../../../config');
-
-		$this->app['emitter'] = $this->app->share(function($app){
-			return new Emitter;
-		});
-
-		$this->app->booting(function(){
-			$loader = AliasLoader::getInstance();
-			$loader->alias('Emitter', 'Timenz\Emitter\Facades\Emitter');
-		});
-
 
 	}
 
